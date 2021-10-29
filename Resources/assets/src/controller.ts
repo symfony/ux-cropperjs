@@ -23,7 +23,7 @@ export default class extends Controller {
         parent.appendChild(img);
 
         // Build the cropper
-        let options = {
+        const options = {
             viewMode: parseInt(this.element.getAttribute('data-view-mode')),
             dragMode: this.element.getAttribute('data-drag-mode'),
             responsive: this.element.hasAttribute('data-responsive'),
